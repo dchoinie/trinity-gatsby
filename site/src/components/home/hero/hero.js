@@ -9,11 +9,11 @@ const hero = () => {
     <div className={styles.hero}>
       <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-center items-center">
         <div className={cx(styles.background, "p-6")}>
-          <h1 className={cx("text-5xl text-gray-600 tracking-wider")}>
+          <h1 className={cx("text-5xl text-gray-700 tracking-wider")}>
             Trinity Evangelical Lutheran Church
           </h1>
           <hr class="my-3 border-gray-500 w-1/2 mx-auto" />
-          <h3 className="text-gray-600 text-xl italic text-center mb-4">
+          <h3 className="text-secondary text-xl italic text-center mb-4">
             A traditional, liturgical congregation of the Lutheran Church
             Missouri Synod
           </h3>
@@ -21,7 +21,7 @@ const hero = () => {
             <div className="mr-4">
               <Button
                 label="Who We Are"
-                link="/"
+                link="/who-we-are"
                 theme="primary"
                 icon={faChurch}
                 size="large"
@@ -30,7 +30,7 @@ const hero = () => {
             <div className="">
               <Button
                 label="Worship Schedule"
-                link="/"
+                link="/worship-schedule"
                 theme="white"
                 icon={faCalendarDays}
                 size="large"

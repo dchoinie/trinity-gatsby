@@ -24,6 +24,15 @@
         background-color: $primary-lighter;
     }
 
+    &.secondary {
+        background-color: $secondary;
+        color: #fff;
+    }
+
+    &.accent {
+        background-color: $accent;
+    }
+
     &.large {
         padding: 0.5rem 1.75rem;
         font-size: 1rem;

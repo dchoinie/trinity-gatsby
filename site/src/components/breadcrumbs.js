@@ -12,7 +12,7 @@ const Breadcrumbs = ({ path }) => {
     return removeStartSlash;
   };
   return (
-    <div className="flex">
+    <div className="flex mb-12">
       <Link to="/">
         <FontAwesomeIcon icon={faHouse} className="self-center text-primary" />
       </Link>

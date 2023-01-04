@@ -82,12 +82,14 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto pt-12">
         <div className="flex justify-between gap-12">
           <div className="flex flex-col w-1/3 text-gray-700">
-            <StaticImage
-              src="../../images/LCMS_logo.png"
-              placeholder="blurred"
-              width={75}
-              className="self-start mb-1"
-            />
+            <Link to="/">
+              <StaticImage
+                src="../../images/LCMS_logo.png"
+                placeholder="blurred"
+                width={75}
+                className="self-start mb-1"
+              />
+            </Link>
             <h6 className="text-lg">{data.site.siteMetadata.title}</h6>
             <p className="text-gray-600 italic">
               {data.site.siteMetadata.description}

@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "../sectionHeading";
 import { faChurch, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "../button/button";
@@ -30,7 +30,7 @@ const About = () => {
             surrounding community with the saving Gospel of our Lord Jesus
             Christ. To accomplish this, we are committed to:
           </p>
-          <ul className="list-disc ml-12 text-gray-600 italic">
+          <ul className="list-disc ml-12 text-secondary italic">
             <li>the pure preaching of God&apos;s holy Word</li>
             <li>the right administration of Christ&apos;s holy Sacraments</li>
             <li>the faithful teaching of the Christian faith</li>

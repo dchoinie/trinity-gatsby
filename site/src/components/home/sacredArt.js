@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "../sectionHeading";
 import { faBrush, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "../button/button";
@@ -9,7 +9,7 @@ const SacredArt = () => {
     <div className="my-48 max-w-screen-xl mx-auto">
       <SectionHeading
         title="Sacred Art"
-        subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        subTitle="But now, O Lord, you are our Father; we are the clay, and you are our potter; we are all the work of your hand"
         icon={faBrush}
       />
       <div className="my-24 flex justify-between gap-12">

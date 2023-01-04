@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout/layout";
-import SectionHeading from "../components/home/sectionHeading";
+import SectionHeading from "../components/sectionHeading";
 import Breadcrumbs from "../components/breadcrumbs";
 
 const Events = ({ location }) => {

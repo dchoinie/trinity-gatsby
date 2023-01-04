@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../sectionHeading";
+import SectionHeading from "../../sectionHeading";
 import {
   faClock,
   faCross,
