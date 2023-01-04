@@ -11,6 +11,7 @@ const Events = ({ location }) => {
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Events" />
         <iframe
+          title="Trinity Evangelical Lutheran Church Calendar"
           src="https://calendar.google.com/calendar/embed?src=ihfb8203lkp31n7038imqlpap8%40group.calendar.google.com&ctz=America%2FChicago"
           style={{ border: "0", width: "100%", height: "90vh" }}
           frameBorder={0}

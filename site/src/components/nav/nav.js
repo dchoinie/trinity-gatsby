@@ -1,7 +1,6 @@
 import React from "react";
 import NavItem from "./navItem";
 import { StaticImage } from "gatsby-plugin-image";
-import * as styles from "./nav.module.scss";
 import { Link } from "gatsby";
 import Button from "../button/button";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
