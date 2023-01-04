@@ -15,14 +15,14 @@ const NavItem = ({ label, link, subMenu }) => {
           <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="mr-2 hover:text-gray-300 tracking-wide"
+              className="mr-2 text-white hover:text-gray-300 tracking-wide"
             >
               {label}
             </button>
             {isOpen ? (
-              <FontAwesomeIcon icon={faChevronUp} />
+              <FontAwesomeIcon icon={faChevronUp} className="text-white" />
             ) : (
-              <FontAwesomeIcon icon={faChevronDown} />
+              <FontAwesomeIcon icon={faChevronDown} className="text-white" />
             )}
             {isOpen && (
               <div className="bg-white p-6 w-52 flex flex-col absolute z-10 rounded shadow-md mt-2">

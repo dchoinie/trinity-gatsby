@@ -103,7 +103,7 @@ const nav = () => {
         </div>
         <div className="w-1/4 flex justify-end">
           <Button
-            label="Sign In"
+            label="Member Sign In"
             link="/"
             theme="white"
             icon={faRightToBracket}

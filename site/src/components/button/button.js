@@ -13,6 +13,7 @@ const Button = ({ label, link, onClick, theme, size, icon }) => {
           className={cx("flex", styles.button, {
             [styles.white]: theme && theme.toLowerCase() === "white",
             [styles.primary]: theme && theme.toLowerCase() === "primary",
+            [styles.large]: size && size.toLowerCase() === "large",
           })}
         >
           <span className={icon ? "mr-2" : ""}>{label}</span>
@@ -24,6 +25,7 @@ const Button = ({ label, link, onClick, theme, size, icon }) => {
           className={cx("flex", styles.button, {
             [styles.white]: theme && theme.toLowerCase() === "white",
             [styles.primary]: theme && theme.toLowerCase() === "primary",
+            [styles.large]: size && size.toLowerCase() === "large",
           })}
         >
           <span className={icon ? "mr-2" : ""}>{label}</span>
