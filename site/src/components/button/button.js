@@ -4,7 +4,7 @@ import cx from "classnames";
 import * as styles from "./button.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Button = ({ label, link, onClick, theme, size, icon }) => {
+const Button = ({ label, link, href, theme, size, icon }) => {
   return (
     <>
       {link ? (
@@ -22,8 +22,10 @@ const Button = ({ label, link, onClick, theme, size, icon }) => {
           {icon && <FontAwesomeIcon icon={icon} className="self-center" />}
         </Link>
       ) : (
-        <button
-          onClick={onClick}
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           className={cx("flex", styles.button, {
             [styles.white]: theme && theme.toLowerCase() === "white",
             [styles.primary]: theme && theme.toLowerCase() === "primary",
@@ -34,7 +36,7 @@ const Button = ({ label, link, onClick, theme, size, icon }) => {
         >
           <span className={icon ? "mr-2" : ""}>{label}</span>
           {icon && <FontAwesomeIcon icon={icon} className="self-center" />}
-        </button>
+        </a>
       )}
     </>
   );

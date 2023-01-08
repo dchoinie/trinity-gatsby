@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "./card";
 
-const ServiceTimes = () => {
+export const ServiceTimes = () => {
   const specialServicesText = (
     <p className="text-gray-600 text-sm">
       Additional opportunities to hear God&apos;s Word and receive the
