@@ -52,7 +52,7 @@ const believeContent = [
 ];
 
 const believeCard = (text) => (
-  <div className="p-6 bg-gray-50 shadow-lg rounded">
+  <div className="p-6 bg-gray-50 border border-gray-200 shadow-lg rounded">
     <p className="text-600">{text}</p>
   </div>
 );

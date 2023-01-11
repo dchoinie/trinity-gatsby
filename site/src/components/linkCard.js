@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const LinkCard = ({ title, link, logo }) => {
   return (
-    <div className="border border-gray-200 p-6 rounded shadow-lg flex flex-col h-full justify-between">
+    <div className="border border-gray-200 bg-gray-50 p-6 rounded shadow-lg flex flex-col h-full justify-between">
       <div>
         <img
           src={logo}

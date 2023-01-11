@@ -8,7 +8,7 @@ const hero = () => {
   return (
     <div className={styles.hero}>
       <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-center items-center">
-        <div className={cx(styles.background, "p-6")}>
+        <div className={cx(styles.background, "p-12 shadow-lg")}>
           <h1 className={cx("text-5xl text-gray-700 tracking-wider")}>
             Trinity Evangelical Lutheran Church
           </h1>
