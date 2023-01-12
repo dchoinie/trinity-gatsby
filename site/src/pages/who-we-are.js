@@ -52,7 +52,7 @@ const WhoWeAre = ({ location }) => {
               group of sinners gathered around our shared confession of Jesus
               and His Gospel.
             </p>
-            <hr class="my-6 border-gray-200 w-2/3" />
+            <hr className="my-6 border-gray-200 w-2/3" />
             <p className="text-gray-600 mb-6">
               We are formed and shaped by the Holy Scriptures. And we worship
               according to the historic liturgy of the Church. With the help of

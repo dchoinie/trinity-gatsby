@@ -14,7 +14,7 @@ const LinkCard = ({ title, link, logo }) => {
           style={{ height: "75px" }}
         />
         <h5 className="text-lg text-gray-700">{title}</h5>
-        <hr class="my-3 border-gray-200 w-2/3" />
+        <hr className="my-3 border-gray-200 w-2/3" />
       </div>
       <div className="self-start">
         <Button

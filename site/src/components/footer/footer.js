@@ -88,13 +88,14 @@ const Footer = () => {
                 placeholder="blurred"
                 width={75}
                 className="self-start mb-1"
+                alt="LCMS Logo"
               />
             </Link>
             <h6 className="text-lg">{data.site.siteMetadata.title}</h6>
             <p className="text-gray-600 italic">
               {data.site.siteMetadata.description}
             </p>
-            <hr class="my-3 border-gray-200 w-2/3" />
+            <hr className="my-3 border-gray-200 w-2/3" />
             <div className="mb-1 flex">
               <FontAwesomeIcon
                 icon={faLocationDot}
@@ -117,7 +118,7 @@ const Footer = () => {
             </p>
             <ul className="text-center text-gray-600 grid grid-cols-2 gap-x-2 gap-y-4">
               {footerItems.map((item) => (
-                <Link to={item.link}>{item.label}</Link>
+                <Link key={item.label} to={item.link}>{item.label}</Link>
               ))}
             </ul>
           </div>
@@ -138,8 +139,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr class="mt-16 mb-10 border-gray-200" />
-        <p class="text-center text-gray-600 pb-10">
+        <hr className="mt-16 mb-10 border-gray-200" />
+        <p className="text-center text-gray-600 pb-10">
           © Copyright {new Date().getFullYear()}, All Rights Reserved Trinity
           Evangelical Lutheran Church
         </p>

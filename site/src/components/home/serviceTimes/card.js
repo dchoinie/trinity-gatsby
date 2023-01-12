@@ -10,7 +10,7 @@ const Card = ({ icon, title, content, buttonText, buttonLink }) => {
         <div className="flex flex-col p-6">
           <FontAwesomeIcon icon={icon} className="text-2xl text-primary mb-2" />
           <h4 className="text-xl text-center text-gray-700">{title}</h4>
-          <hr class="my-3 border-gray-200 w-2/3 mx-auto" />
+          <hr className="my-3 border-gray-200 w-2/3 mx-auto" />
           <div>{content}</div>
         </div>
         <div className="bg-gray-50 rounded-bl rounded-br flex justify-center">

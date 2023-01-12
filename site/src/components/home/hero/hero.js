@@ -14,7 +14,7 @@ const hero = () => {
           <h1 className={cx("text-5xl text-gray-700 tracking-wider")}>
             Trinity Evangelical Lutheran Church
           </h1>
-          <hr class="my-3 border-gray-500 w-1/2 mx-auto" />
+          <hr className="my-3 border-gray-500 w-1/2 mx-auto" />
           <h3 className="text-secondary text-xl italic text-center mb-4">
             A traditional, liturgical congregation of the Lutheran Church
             Missouri Synod

@@ -22,7 +22,7 @@ const About = () => {
             At the center of our life together is Jesus Christ, the Lamb of God
             who takes away the sin of the world.
           </p>
-          <hr class="my-3 border-gray-200 w-2/3" />
+          <hr className="my-3 border-gray-200 w-2/3" />
           <p className="mb-4">
             We joyfully believe, teach, and confess the one true faith as it is
             revealed by the Triune God in Holy Scripture and faithfully
@@ -39,7 +39,7 @@ const About = () => {
               Church
             </li>
           </ul>
-          <hr class="my-3 border-gray-200 w-2/3" />
+          <hr className="my-3 border-gray-200 w-2/3" />
           <p className="mb-4">
             We invite you to join us and grow in the grace and knowledge of
             Jesus Christ our Savior. Through Him we are called out of darkness

@@ -25,6 +25,13 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     {
+      resolve: "gatsby-plugin-sanity-image",
+      options: {
+        projectId: "vj9e7bzh",
+        dataset: "production",
+      },
+    },
+    {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
