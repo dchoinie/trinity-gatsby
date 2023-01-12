@@ -10,6 +10,7 @@ const Catechesis = ({ location }) => {
       <div className="max-w-screen-xl mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Catechesis" />
+        <p>Page coming soon...</p>
       </div>
     </Layout>
   );

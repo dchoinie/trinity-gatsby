@@ -17,7 +17,7 @@ const WhoWeAre = ({ location }) => {
           title="Who We Are"
           subTitle="Our Name Says A Lot About Us"
         />
-        <div className="grid grid-cols-4 gap-12 my-24">
+        <div className="grid grid-cols-2 gap-12 my-24">
           <div>
             <WhoWeAreComponent
               title="Trinity"
