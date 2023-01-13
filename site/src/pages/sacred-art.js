@@ -3,42 +3,60 @@ import Layout from "../components/layout/layout";
 import SectionHeading from "../components/sectionHeading";
 import Breadcrumbs from "../components/breadcrumbs";
 import SacredArtCard from "../components/sacredArtCard";
-import img1 from "../images/sacredArt/1.jpg";
-import img2 from "../images/sacredArt/2.jpg";
-import img3 from "../images/sacredArt/3.jpg";
-import img4 from "../images/sacredArt/4.jpg";
-import img5 from "../images/sacredArt/5.jpg";
-import img6 from "../images/sacredArt/6.jpg";
+import Nativity from "../images/sacredArt/nativity.jpg";
+import BoyTemple from "../images/sacredArt/boyTemple.jpg";
+import Baptism from "../images/sacredArt/baptism.jpg";
+import Calling from "../images/sacredArt/calling.jpg";
+import Transfiguration from "../images/sacredArt/transfiguration.jpeg";
+import LordsSupper from "../images/sacredArt/lordsSupper.jpg";
+import Crucifixion from "../images/sacredArt/crucifixion.jpg";
+import Resurrection from "../images/sacredArt/resurrection.jpg";
+import Ascension from "../images/sacredArt/ascension.jpeg";
 
 const sacredArtInfo = [
   {
-    image: `${img1}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${Nativity}`,
+    title: 'The Nativity of Our Lord',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
   {
-    image: `${img2}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${BoyTemple}`,
+    title: 'The Boy Jesus in the Temple',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
   {
-    image: `${img3}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${Baptism}`,
+    title: 'The Baptism of Our Lord',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
   {
-    image: `${img4}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${Calling}`,
+    title: 'The Calling of the First Disciples',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
   {
-    image: `${img5}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${Transfiguration}`,
+    title: 'The Transfiguration of Our Lord',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
   {
-    image: `${img6}`,
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+    image: `${LordsSupper}`,
+    title: "The Lord's Supper",
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
+  },
+  {
+    image: `${Crucifixion}`,
+    title: 'The Crucifixion of Our Lord',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
+  },
+  {
+    image: `${Resurrection}`,
+    title: 'The Resurrection of Our Lord',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
+  },
+  {
+    image: `${Ascension}`,
+    title: 'The Ascension of Our Lord',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis neque! Corrupti laborum facere culpa corporis perspiciatis laboriosam neque voluptatem, aliquam exercitationem.',
   },
 ]

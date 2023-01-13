@@ -8,7 +8,8 @@ const SacredArtCard = ({ image, title, description, reverse }) => {
         <img src={image} alt={title} className="shadow-lg" />
       </div>
       <div className="flex flex-col w-1/2">
-        <h4 className="text-2xl text-primary tracking-wide mb-4">{title}</h4>
+        <h4 className="text-2xl text-primary tracking-wider">{title}</h4>
+        <hr className="my-3 border border-gray-200 w-2/3" />
         <p className="text-gray-600">{description}</p>
       </div>
     </div>

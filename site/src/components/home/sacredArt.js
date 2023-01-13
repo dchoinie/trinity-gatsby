@@ -15,9 +15,9 @@ const SacredArt = () => {
       <div className="my-24 flex justify-between gap-12">
         <div className="flex w-1/2">
           <StaticImage
-            src="../../images/painting.png"
+            src="../../images/sacredArt/resurrection.jpg"
             alt="painting"
-            className="shadow-lg"
+            className="shadow-lg rounded"
           />
         </div>
         <div className="flex flex-col w-1/2">
