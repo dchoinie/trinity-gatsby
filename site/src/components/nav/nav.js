@@ -85,6 +85,7 @@ const nav = () => {
                 src="../../images/LCMS_logo.png"
                 height={80}
                 alt="LCMS Logo"
+                placeholder="blurred"
               />
             </div>
           </Link>

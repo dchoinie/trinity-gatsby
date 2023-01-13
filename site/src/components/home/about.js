@@ -60,6 +60,7 @@ const About = () => {
             src="../../images/exterior.jpg"
             alt="Church Exterior"
             className="rounded shadow-lg"
+            placeholder="blurred"
           />
         </div>
       </div>

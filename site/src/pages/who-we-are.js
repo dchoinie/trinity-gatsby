@@ -75,6 +75,7 @@ const WhoWeAre = ({ location }) => {
               src="../images/aisle.jpg"
               alt="aisle"
               className="rounded shadow-lg"
+              placeholder="blurred"
             />
           </div>
         </div>

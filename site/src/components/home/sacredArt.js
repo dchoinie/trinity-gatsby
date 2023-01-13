@@ -18,6 +18,7 @@ const SacredArt = () => {
             src="../../images/sacredArt/resurrection.jpg"
             alt="painting"
             className="shadow-lg"
+            placeholder="blurred"
           />
         </div>
         <div className="flex flex-col w-1/2">
