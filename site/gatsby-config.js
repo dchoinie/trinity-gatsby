@@ -55,6 +55,30 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/LCMS_logo.png",
+        name: "Trinity Evangelical Lutheran Church",
+        short_name: "Trinity Waterville",
+        background_color: "#005DA6",
+        theme_color: "#005DA6",
+        display: "standalone",
+        description: `A traditional, liturgical congregation of the Lutheran Church Missouri Synod`,
+        icons: [
+          {
+            "src": "./android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+          },
+          {
+            "src": "./android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+          },
+        ]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/bulletins/`, `/catechesis/`, `/contact/`, `/contact/`, `/events/`, `/index/`, `/links/`, `/privacy-policy/`, `/sacred-art/`, `/sermons/`, `/sermons/`, `/staff/`, `/terms-and-conditions/`, `/what-to-expect/`, `/what-we-believe/`, `/who-we-are/`, `/worship-schedule/`],
       },
     },
     "gatsby-transformer-sharp",
