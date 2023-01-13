@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./button/button";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { StaticImage } from "gatsby-plugin-image";
 
 const LinkCard = ({ title, link, logo }) => {
   return (

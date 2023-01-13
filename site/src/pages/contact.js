@@ -88,7 +88,7 @@ const Contact = ({ location }) => {
         </div>
       </div>
       <div className="">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.3815367108705!2d-93.57619778461381!3d44.219802679105904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f68f8f70a98d7b%3A0x83825fb46d532837!2sTrinity%20Lutheran%20Church!5e0!3m2!1sen!2sus!4v1618195755454!5m2!1sen!2sus" width="100%" height="450" style={{ border: "0" }} allowFullScreen loading="lazy"></iframe>
+          <iframe title="Trinity Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.3815367108705!2d-93.57619778461381!3d44.219802679105904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f68f8f70a98d7b%3A0x83825fb46d532837!2sTrinity%20Lutheran%20Church!5e0!3m2!1sen!2sus!4v1618195755454!5m2!1sen!2sus" width="100%" height="450" style={{ border: "0" }} allowFullScreen loading="lazy"></iframe>
       </div>
     </Layout>
   );

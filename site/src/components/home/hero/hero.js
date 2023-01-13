@@ -3,8 +3,6 @@ import * as styles from "./hero.module.scss";
 import cx from "classnames";
 import Button from "../../button/button";
 import { faChurch, faCalendarDays } from "@fortawesome/free-solid-svg-icons";
-import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image"
 
 const hero = () => {
   return (
