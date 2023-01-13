@@ -14,7 +14,7 @@ const NavItem = ({ label, link, subMenu }) => {
           <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="mr-2 text-white hover:text-gray-300 tracking-wide"
+              className="mr-2 text-white hover:text-gray-300 tracking-wide whitespace-nowrap"
             >
               {label}
             </button>
@@ -27,8 +27,9 @@ const NavItem = ({ label, link, subMenu }) => {
               <div className="bg-white p-6 w-52 flex flex-col absolute z-10 rounded shadow-md mt-2">
                 {subMenu.map((subItem) => (
                   <Link
+                    key={subItem.label}
                     to={subItem.link}
-                    className="text-gray-900 hover:text-primary pb-3 mt-3 border-b border-gray-200 last:border-b-0 last:pb-0 first:mt-0"
+                    className="text-gray-900 hover:text-primary pb-3 mt-3 border-b border-gray-200 last:border-b-0 last:pb-0 first:mt-0 whitespace-nowrap"
                   >
                     {subItem.label}
                   </Link>

@@ -8,14 +8,13 @@ import Seo from "../components/seo";
 
 const Staff = ({ location, data }) => {
   const { pathname } = location;
-  console.log(data);
   return (
     <Layout>
       <Seo title="Staff" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Staff" />
-        <div className="my-24 grid grid-cols-max gap-12 justify-items-center">
+        <div className="my-24 grid grid-cols-1 lg:grid-cols-max gap-12 justify-items-center">
           {data.allSanityStaff.edges.map((staff) => (
             <StaffCard
               key={staff.node.id}

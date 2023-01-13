@@ -77,13 +77,13 @@ const WhatToExpect = ({ location }) => {
   return (
     <Layout>
       <Seo title="What To Expect" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading
           title="What To Expect"
           subTitle="Trinity Evangelical Lutheran Church is a traditional, liturgical congregation of The Lutheran Church Missouri Synod. We use the hymns and liturgies that are found in the Lutheran Service Book hymnal. We celebrate the Divine Service with Holy Communion every Sunday morning."
         />
-        <div className="my-24 grid grid-cols-2 gap-12">
+        <div className="my-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {whatToExpectItems.map((item) => (
             <WhatToExpectComponent
               title={item.title}

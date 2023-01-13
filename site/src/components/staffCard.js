@@ -13,14 +13,13 @@ const StaffCard = ({
   bio,
   officeHours,
 }) => {
-  console.log(image);
   return (
-    <div className="flex gap-12">
+    <div className="flex flex-col lg:flex-row gap-12">
       <SanityImage
         asset={image}
         width={300}
         alt={`${first}, ${last}`}
-        className="h-80 rounded shadow-lg"
+        className="h-80 rounded shadow-lg self-center"
       />
       <div className="flex flex-col">
         <h5 className="text-xl text-gray-700">{`${title}. ${first} ${last}`}</h5>

@@ -49,20 +49,20 @@ const Contact = ({ location }) => {
   return (
     <Layout>
       <Seo title="Contact" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Contact" />
         <div className="mt-24 mb-12">
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {contactInfo.map((c) => contactCard(c.icon, c.text))}
           </div>
         </div>
-        <div className="w-full bg-gray-50 border border-gray-200 rounded shadow-lg p-12">
+        <div className="w-full bg-gray-50 border border-gray-200 rounded shadow-lg p-6 lg:p-12">
           <h3 className="text-center text-gray-700 text-3xl mb-12">
             Send Us A Message
           </h3>
           <form action="https://formspree.io/f/xbjejeby" method="POST">
-            <div className="flex justify-between gap-12 w-full">
+            <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-12 w-full">
               <div className="w-full mb-12">
                 <label htmlFor="first_name">First Name</label>
                 <input
@@ -86,7 +86,7 @@ const Contact = ({ location }) => {
                 />
               </div>
             </div>
-            <div className="flex justify-between gap-12 w-full">
+            <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-12 w-full">
               <div className="w-full mb-12">
                 <label htmlFor="name">Email</label>
                 <input

@@ -23,13 +23,13 @@ const WorshipSchedule = ({ location }) => {
   return (
     <Layout>
       <Seo title="Worship Schedule" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading
           title="Worship Schedule"
           subTitle="Please join us for worship on Sunday mornings"
         />
-        <div className="my-24 grid grid-cols-2 gap-24 justify-center">
+        <div className="my-24 grid grid-cols-1 lg:grid-cols-2 gap-24 justify-center">
           <Card
             title="Divine Service"
             icon={faCross}

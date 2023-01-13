@@ -113,10 +113,10 @@ const Links = ({ location }) => {
   return (
     <Layout>
       <Seo title="Links" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Links" />
-        <div className="my-24 grid grid-cols-3 gap-12">
+        <div className="my-24 grid grid-cols-1 lg:grid-cols-3 gap-12">
           {linkData.map((r) => (
             <LinkCard title={r.name} link={r.link} logo={r.imgSrc} />
           ))}

@@ -6,14 +6,14 @@ import Button from "../button/button";
 
 const SacredArt = () => {
   return (
-    <div className="my-48 max-w-screen-xl mx-auto">
+    <div className="my-48 max-w-screen-xl mx-6 lg:mx-auto">
       <SectionHeading
         title="Sacred Art"
         subTitle="But now, O Lord, you are our Father; we are the clay, and you are our potter; we are all the work of your hand"
         icon={faBrush}
       />
-      <div className="my-24 flex justify-between gap-12">
-        <div className="flex w-1/2">
+      <div className="my-24 flex flex-col lg:flex-row justify-between gap-12">
+        <div className="flex w-full lg:w-1/2">
           <StaticImage
             src="../../images/sacredArt/resurrection.jpg"
             alt="painting"
@@ -21,21 +21,9 @@ const SacredArt = () => {
             placeholder="blurred"
           />
         </div>
-        <div className="flex flex-col w-1/2">
-          <h4 className="text-2xl text-gray-700 tracking-wider mb-4">
-            Lorem ipsum dolor sit amet.
-          </h4>
+        <div className="flex flex-col w-full lg:w-1/2">
           <p className="text-gray-600 mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum qui
-            reprehenderit quis voluptatum dolorum blanditiis fuga debitis
-            laboriosam illo maxime deserunt inventore, repudiandae neque
-            repellendus quae ducimus eaque numquam aspernatur? Vero modi itaque
-            quia nesciunt.
-          </p>
-          <p className="text-gray-600 mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eos,
-            assumenda repellendus autem minima illo dolorem molestias officia
-            deserunt expedita ratione earum?
+          After meeting with Professor William Bukowski of Betheny Lutheran College in Mankato in 2015, Trinity Lutheran Church decided to add sacred art to our sanctuary. The congregation commissioned Professor Bukowski to paint ten original works of sacred art to beautify our church. These works portray the life of Jesus, highlighting events that appear annually in the Holy Gospels of the historic lectionary of the Church.
           </p>
           <div className="self-start">
             <Button

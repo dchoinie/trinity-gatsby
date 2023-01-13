@@ -6,16 +6,16 @@ import Button from "../button/button";
 
 const About = () => {
   return (
-    <div className="my-48 max-w-screen-xl mx-auto">
+    <div className="my-48 max-w-screen-sm lg:max-w-screen-xl mx-6 lg:mx-auto">
       <div className="mb-24">
         <SectionHeading
           title="About Trinity Evangelical Lutheran Church"
-          subTitle="Through Him we are called out of darkness into God’s marvelous light"
+          subTitle="Through Him we are called out of darkness into God&apos;s marvelous light"
           icon={faChurch}
         />
       </div>
-      <div className="flex gap-12">
-        <div className="flex flex-col w-1/2">
+      <div className="flex flex-col-reverse lg:flex-row gap-12">
+        <div className="flex flex-col w-full lg:w-1/2">
           <p>
             Trinity Evangelical Lutheran Church is a congregation gathered by
             the Holy Spirit around our Lord&apos;s saving Word and Sacraments.
@@ -55,7 +55,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="flex w-1/2">
+        <div className="flex w-full lg:w-1/2">
           <StaticImage
             src="../../images/exterior.jpg"
             alt="Church Exterior"

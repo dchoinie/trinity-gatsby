@@ -13,13 +13,13 @@ const WhoWeAre = ({ location }) => {
   return (
     <Layout>
       <Seo title="Who We Are" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading
           title="Who We Are"
           subTitle="Our Name Says A Lot About Us"
         />
-        <div className="grid grid-cols-2 gap-12 my-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 my-24">
           <div>
             <WhoWeAreComponent
               title="Trinity"
@@ -45,8 +45,8 @@ const WhoWeAre = ({ location }) => {
             />
           </div>
         </div>
-        <div className="flex justify-between gap-12">
-          <div className="flex flex-col w-1/2">
+        <div className="flex flex-col lg:flex-row justify-between gap-12">
+          <div className="flex flex-col w-full lg:w-1/2">
             <p className="text-gray-600">
               Trinity Evangelical Lutheran Church has been proclaming the Gospel
               of the death and resurrection of Jesus to the people of Waterville
@@ -72,7 +72,7 @@ const WhoWeAre = ({ location }) => {
               />
             </div>
           </div>
-          <div className="flex w-1/2">
+          <div className="flex w-full lg:w-1/2">
             <StaticImage
               src="../images/aisle.jpg"
               alt="aisle"

@@ -5,11 +5,11 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const layout = ({ children }) => {
   return (
-    <>
+    <div>
       <Nav />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

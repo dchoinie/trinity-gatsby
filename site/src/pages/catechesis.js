@@ -9,7 +9,7 @@ const Catechesis = ({ location }) => {
   return (
     <Layout>
       <Seo title="Catechesis" />
-      <div className="max-w-screen-xl mx-auto my-24">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Catechesis" />
         <p>Page coming soon...</p>

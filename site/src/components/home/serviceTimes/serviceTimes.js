@@ -35,8 +35,8 @@ export const ServiceTimes = () => {
         subTitle="We invite you to join us and grow in the grace and knowledge of Jesus Christ our Savior."
         icon={faClock}
       />
-      <div className="flex justify-between gap-12 mt-12">
-        <div className="w-1/3">
+      <div className="flex flex-col lg:flex-row justify-between gap-12 mt-12 mx-6 lg:mx-0">
+        <div className="w-full lg:w-1/3">
           <Card
             title="Divine Service"
             icon={faCross}
@@ -45,7 +45,7 @@ export const ServiceTimes = () => {
             content={divineServiceContent}
           />
         </div>
-        <div className="w-1/3">
+        <div className="w-full lg:w-1/3">
           <Card
             title="Adult Bible Class & Sunday School"
             icon={faBookBible}
@@ -54,7 +54,7 @@ export const ServiceTimes = () => {
             content={bibleStudyContent}
           />
         </div>
-        <div className="w-1/3">
+        <div className="w-full lg:w-1/3">
           <Card
             title="Special Services"
             icon={faCalendarPlus}

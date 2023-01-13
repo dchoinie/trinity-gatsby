@@ -79,9 +79,9 @@ const Footer = () => {
 
   return (
     <div className="bg-gray-50 text-sm">
-      <div className="max-w-screen-xl mx-auto pt-12">
-        <div className="flex justify-between gap-12">
-          <div className="flex flex-col w-1/3 text-gray-700">
+      <div className="max-w-screen-xl mx-6 lg:mx-auto pt-12">
+        <div className="flex flex-col lg:flex-row justify-between gap-12">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/3 text-gray-700">
             <Link to="/">
               <StaticImage
                 src="../../images/LCMS_logo.png"
@@ -112,7 +112,7 @@ const Footer = () => {
               {data.site.siteMetadata.email}
             </div>
           </div>
-          <div className="flex flex-col justify-end items-center w-1/3">
+          <div className="flex flex-col lg:justify-end items-center w-full lg:w-1/3">
             <p className="text-lg text-gray-700 text-center underline mb-4">
               Navigation
             </p>
@@ -122,8 +122,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col items-end justify-end w-1/3">
-            <div className="self-end mb-4">
+          <div className="flex flex-col items-center lg:items-end justify-end w-full lg:w-1/3">
+            <div className="self-center lg:self-end mb-4">
               <Button
                 label="Member Sign In"
                 theme="primary"
