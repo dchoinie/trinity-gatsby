@@ -6,11 +6,13 @@ import WhoWeAreComponent from "../components/whoWeAre";
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "../components/button/button";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Seo from "../components/seo";
 
 const WhoWeAre = ({ location }) => {
   const { pathname } = location;
   return (
     <Layout>
+      <Seo title="Who We Are" />
       <div className="max-w-screen-xl mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading

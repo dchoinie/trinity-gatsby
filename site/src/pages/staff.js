@@ -4,12 +4,14 @@ import SectionHeading from "../components/sectionHeading";
 import Breadcrumbs from "../components/breadcrumbs";
 import { graphql } from "gatsby";
 import StaffCard from "../components/staffCard";
+import Seo from "../components/seo";
 
 const Staff = ({ location, data }) => {
   const { pathname } = location;
   console.log(data);
   return (
     <Layout>
+      <Seo title="Staff" />
       <div className="max-w-screen-xl mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Staff" />

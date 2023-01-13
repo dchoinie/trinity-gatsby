@@ -4,6 +4,7 @@ import SectionHeading from "../components/sectionHeading";
 import Breadcrumbs from "../components/breadcrumbs";
 import Card from "../components/home/serviceTimes/card";
 import { faCross, faBookBible } from "@fortawesome/free-solid-svg-icons";
+import Seo from "../components/seo";
 
 const WorshipSchedule = ({ location }) => {
   const { pathname } = location;
@@ -21,6 +22,7 @@ const WorshipSchedule = ({ location }) => {
 
   return (
     <Layout>
+      <Seo title="Worship Schedule" />
       <div className="max-w-screen-xl mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading

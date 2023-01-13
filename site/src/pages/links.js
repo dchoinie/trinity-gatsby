@@ -18,6 +18,7 @@ import Wittenberg from "../images/logos/Wittenberg.png";
 import AdCrucem from "../images/logos/AdCrucem.webp";
 import EP from "../images/logos/EP.png";
 import CO from "../images/logos/CO.png";
+import Seo from "../components/seo";
 
 const linkData = [
   {
@@ -111,6 +112,7 @@ const Links = ({ location }) => {
   const { pathname } = location;
   return (
     <Layout>
+      <Seo title="Links" />
       <div className="max-w-screen-xl mx-auto my-24">
         <Breadcrumbs path={pathname} />
         <SectionHeading title="Links" />
