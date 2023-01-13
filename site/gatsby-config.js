@@ -24,6 +24,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: "gatsby-plugin-sanity-image",
       options: {

@@ -133,9 +133,9 @@ const Footer = () => {
               />
             </div>
             <div className="flex">
-              <p className="text-gray-600">Terms & Conditions</p>
+              <Link to="/terms-and-conditions" className="text-gray-600">Terms & Conditions</Link>
               <span className="mx-2 text-gray-600">|</span>
-              <p className="text-gray-600">Privacy Policy</p>
+              <Link to="/privacy-policy" className="text-gray-600">Privacy Policy</Link>
             </div>
           </div>
         </div>

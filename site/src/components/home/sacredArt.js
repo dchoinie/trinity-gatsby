@@ -17,7 +17,7 @@ const SacredArt = () => {
           <StaticImage
             src="../../images/sacredArt/resurrection.jpg"
             alt="painting"
-            className="shadow-lg rounded"
+            className="shadow-lg"
           />
         </div>
         <div className="flex flex-col w-1/2">
