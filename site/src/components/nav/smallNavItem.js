@@ -9,9 +9,11 @@ const SmallNavItem = ({ label, link, subMenu }) => {
           <span className="mb-1">{label}</span>
           <ul className="flex flex-col items-start">
             {subMenu.map((subItem) => (
-              <Link key={subItem.label} to={subItem.link} className="ml-4 text-gray-600 mb-1">
-                {subItem.label}
-              </Link>
+              <li>
+                <Link key={subItem.label} to={subItem.link} className="ml-4 text-gray-600 mb-1">
+                  {subItem.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

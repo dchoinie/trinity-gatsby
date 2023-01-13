@@ -9,7 +9,7 @@ module.exports = {
     address: `415 Lake Street West Waterville, MN, 56096`,
     phone: `507.362.4454`,
     email: `tlchurch@frontiernet.net`,
-    image: `./src/images/LCMS_logo.png`,
+    image: `./favicon.ico`,
   },
   plugins: [
     {

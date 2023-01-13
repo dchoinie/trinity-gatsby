@@ -118,7 +118,9 @@ const Footer = () => {
             </p>
             <ul className="text-center text-gray-600 grid grid-cols-2 gap-x-2 gap-y-4">
               {footerItems.map((item) => (
-                <Link key={item.label} to={item.link}>{item.label}</Link>
+                <li>
+                  <Link key={item.label} to={item.link}>{item.label}</Link>
+                </li>
               ))}
             </ul>
           </div>

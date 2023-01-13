@@ -13,10 +13,10 @@ const hero = () => {
             Trinity Evangelical Lutheran Church
           </h1>
           <hr className="my-3 border-gray-500 w-1/2 mx-auto" />
-          <h3 className="text-lg text-secondary lg:text-xl italic text-center mb-4">
+          <h4 className="text-lg text-secondary lg:text-xl italic text-center mb-4">
             A traditional, liturgical congregation of the Lutheran Church
             Missouri Synod
-          </h3>
+          </h4>
           <div className="flex flex-col lg:flex-row lg:justify-center">
             <div className="mr-4 self-center mb-4 lg:mb-0">
               <Button
