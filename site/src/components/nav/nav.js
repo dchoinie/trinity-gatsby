@@ -1,78 +1,84 @@
-import React, { useState } from "react";
-import NavItem from "./navItem";
-import SmallNavItem from "./smallNavItem";
-import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
-import Button from "../button/button";
-import { faRightToBracket, faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OutsideClickHandler from "react-outside-click-handler";
+import React, { useState } from 'react';
+import NavItem from './navItem';
+import SmallNavItem from './smallNavItem';
+import cx from 'classnames';
+import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
+import Button from '../button/button';
+import {
+  faRightToBracket,
+  faBars,
+  faX,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import OutsideClickHandler from 'react-outside-click-handler';
+import * as styles from './nav.module.scss';
 
 const navItems = [
   {
-    label: "Home",
-    link: "/",
+    label: 'Home',
+    link: '/',
     subMenu: [],
   },
   {
-    label: "Our Church",
+    label: 'Our Church',
     subMenu: [
       {
-        label: "Who We Are",
-        link: "/who-we-are",
+        label: 'Who We Are',
+        link: '/who-we-are',
       },
       {
-        label: "What We Believe",
-        link: "/what-we-believe",
+        label: 'What We Believe',
+        link: '/what-we-believe',
       },
       {
-        label: "What To Expect",
-        link: "/what-to-expect",
+        label: 'What To Expect',
+        link: '/what-to-expect',
       },
       {
-        label: "Worship Schedule",
-        link: "/worship-schedule",
+        label: 'Worship Schedule',
+        link: '/worship-schedule',
       },
       {
-        label: "Our Staff",
-        link: "/staff",
+        label: 'Our Staff',
+        link: '/staff',
       },
     ],
   },
   {
-    label: "Resources",
+    label: 'Resources',
     subMenu: [
       {
-        label: "Bulletins",
-        link: "/bulletins",
+        label: 'Bulletins',
+        link: '/bulletins',
       },
       {
-        label: "Catechesis",
-        link: "/catechesis",
+        label: 'Catechesis',
+        link: '/catechesis',
       },
       {
-        label: "Sermons",
-        link: "/sermons",
+        label: 'Sermons',
+        link: '/sermons',
       },
       {
-        label: "Links",
-        link: "/links",
+        label: 'Links',
+        link: '/links',
       },
     ],
   },
   {
-    label: "Events",
-    link: "/events",
+    label: 'Events',
+    link: '/events',
     subMenu: [],
   },
   {
-    label: "Sacred Art",
-    link: "/sacred-art",
+    label: 'Sacred Art',
+    link: '/sacred-art',
     subMenu: [],
   },
   {
-    label: "Contact",
-    link: "/contact",
+    label: 'Contact',
+    link: '/contact',
     subMenu: [],
   },
 ];
@@ -80,66 +86,82 @@ const navItems = [
 const Nav = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   return (
-    <div className="bg-primary shadow-md">
-      <div className="lg:max-w-screen-xl mx-6 lg:mx-auto py-4 flex justify-between lg:gap-6">
-        <div className="lg:w-1/4">
-          <Link to="/">
-            <div className="bg-white absolute top-0 p-4 rounded-bl rounded-br shadow-md z-10">
+    <div className='bg-primary shadow-md relative'>
+      <div className='lg:max-w-screen-xl mx-6 lg:mx-auto py-4 flex justify-between lg:gap-6'>
+        <div className='lg:w-1/4'>
+          <Link to='/'>
+            <div className='bg-white absolute top-0 p-4 rounded-bl rounded-br shadow-md z-10'>
               <StaticImage
-                src="../../images/LCMS_logo.png"
-                alt="LCMS Logo"
-                placeholder="blurred"
-                className="w-12 lg:w-16"
+                src='../../images/LCMS_logo.png'
+                alt='LCMS Logo'
+                placeholder='blurred'
+                className='w-12 lg:w-16'
               />
             </div>
           </Link>
           ;
         </div>
-        <div className="lg:hidden relative">
+        <div className='lg:hidden'>
           <OutsideClickHandler onOutsideClick={() => setHamburgerOpen(false)}>
             <FontAwesomeIcon
               icon={faBars}
-              className="text-xl text-white relative z-20"
+              className='text-xl text-white z-20 hover:cursor-pointer'
               onClick={() => setHamburgerOpen(!hamburgerOpen)}
             />
-            {hamburgerOpen && (
-              <div className="absolute top-0 right-0 z-10 mt-8 bg-white px-7 py-3 rounded shadow-lg">
-                {navItems.map((item) => (
-                  <SmallNavItem
-                    key={item.label}
-                    label={item.label}
-                    link={item.link}
-                    subMenu={item.subMenu}
+            {/* {hamburgerOpen && ( */}
+              <div
+                className={cx(
+                  'z-10 bg-white px-6 py-12 absolute top-0 left-0 w-full h-screen transform transition-all duration-300 ease-in-out',
+                  hamburgerOpen ? 'scale-100' : 'scale-0'
+                )}
+              >
+                <FontAwesomeIcon icon={faX} className="absolute top-5 right-6 text-lg text-gray-800 hover:cursor-pointer" onClick={() => setHamburgerOpen(false)} />
+                <div className="h-full border-border-red-500 flex flex-col place-items-center text-center">
+                  <StaticImage
+                    src='../../images/LCMS_logo.png'
+                    alt='LCMS Logo'
+                    placeholder='blurred'
+                    className='w-24'
                   />
-                ))}
-                <div className="whitespace-nowrap mt-2">
-                  <Button
-                    label="Member Sign In"
-                    link="/"
-                    theme="primary"
-                    icon={faRightToBracket}
-                  />
+                  <hr className="border border-gray-200 my-6 w-2/3 mx-auto" />
+                  {navItems.map((item) => (
+                    <SmallNavItem
+                      key={item.label}
+                      label={item.label}
+                      link={item.link}
+                      subMenu={item.subMenu}
+                    />
+                  ))}
+                  <div className='whitespace-nowrap mt-2'>
+                    <Button
+                      label='Member Sign In'
+                      link='/'
+                      theme='primary'
+                      icon={faRightToBracket}
+                      size="large"
+                    />
+                  </div>
                 </div>
               </div>
-            )}
+            {/* )} */}
           </OutsideClickHandler>
         </div>
-        <div className="lg:w-3/4 lg:flex justify-between items-center hidden">
+        <div className='lg:w-3/4 lg:flex justify-between items-center hidden'>
           {navItems.map((item) => (
             <NavItem
               key={item.label}
               label={item.label}
               link={item.link}
               subMenu={item.subMenu}
-              theme="light"
+              theme='light'
             />
           ))}
         </div>
-        <div className="lg:w-1/4 lg:flex justify-end hidden">
+        <div className='lg:w-1/4 lg:flex justify-end hidden'>
           <Button
-            label="Member Sign In"
-            link="/"
-            theme="white"
+            label='Member Sign In'
+            link='/'
+            theme='white'
             icon={faRightToBracket}
           />
         </div>

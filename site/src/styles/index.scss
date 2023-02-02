@@ -7,3 +7,12 @@ $accent: #559500;
 $text: #292524;
 $box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
