@@ -1,15 +1,15 @@
 import React from 'react'
 import cx from "classnames";
-import SanityImage from "gatsby-plugin-sanity-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const SacredArtCard = ({ image, title, description, reverse }) => {
   return (
     <div className={cx('flex flex-col w-full mb-24 gap-x-12', reverse ? "lg:flex-row-reverse" : "lg:flex-row")}>
       <div className="flex w-full lg:w-1/2 mb-4 lg:mb-0">
-        <SanityImage
-          asset={image}
-          className="shadow-lg self-center"
+        <GatsbyImage
+          image={image}
           alt={title}
+          className="shadow-lg self-center"
         />
       </div>
       <div className="flex flex-col w-full lg:w-1/2">
