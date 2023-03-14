@@ -8,7 +8,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const About = () => {
   const data = useStaticQuery(graphql`
     query ExteriorQuery {
-      exterior: file(relativePath: { eq: "exterior.jpg" }) {
+      exterior: file(relativePath: { eq: "trinity_sign.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 700)
         }
@@ -70,6 +70,7 @@ const About = () => {
             image={data.exterior.childImageSharp.gatsbyImageData}
             alt="Church Exterior"
             className='rounded shadow-lg'
+            style={{ height: '575px '}}
           />
         </div>
       </div>

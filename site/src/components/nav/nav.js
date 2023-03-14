@@ -99,7 +99,7 @@ const Nav = () => {
       <div className='lg:max-w-screen-xl mx-6 lg:mx-auto py-4 flex justify-between lg:gap-6'>
         <div className='lg:w-1/4'>
           <Link to='/'>
-            <div className='bg-white absolute top-0 p-4 rounded-bl rounded-br shadow-md z-10'>
+            <div className='bg-white absolute top-0 p-4 rounded-bl rounded-br shadow-md z-20'>
               <GatsbyImage
                 image={data.logo.childImageSharp.gatsbyImageData}
                 alt='LCMS Logo'
@@ -115,10 +115,9 @@ const Nav = () => {
               className='text-xl text-white z-20 hover:cursor-pointer'
               onClick={() => setHamburgerOpen(!hamburgerOpen)}
             />
-            {/* {hamburgerOpen && ( */}
             <div
               className={cx(
-                'z-10 bg-white px-6 py-12 absolute top-0 left-0 w-full h-screen transform transition-all duration-300 ease-in-out',
+                'z-20 bg-white px-6 py-12 absolute top-0 left-0 w-full h-screen transform transition-all duration-300 ease-in-out',
                 hamburgerOpen ? 'scale-100' : 'scale-0'
               )}
             >
@@ -153,7 +152,6 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            {/* )} */}
           </OutsideClickHandler>
         </div>
         <div className='lg:w-3/4 lg:flex justify-between items-center hidden'>

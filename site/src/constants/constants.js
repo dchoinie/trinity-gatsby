@@ -1,0 +1,1 @@
+export const WEBSITE_LOGIN = 'https://trinity-cms.netlify.app/'
