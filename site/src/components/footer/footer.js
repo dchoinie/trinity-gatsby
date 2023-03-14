@@ -7,9 +7,11 @@ import {
   faLocationDot,
   faEnvelope,
   faAngleRight,
+  faExternalLink,
 } from '@fortawesome/free-solid-svg-icons';
 import Button from '../button/button';
 import { Link } from 'gatsby';
+import { WEBSITE_LOGIN } from "../../constants/constants";
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -82,8 +84,6 @@ const Footer = () => {
     },
   ];
 
-  console.log(data.logo.childImageSharp.gatsbyImageData);
-
   return (
     <div className='bg-gray-50 text-sm'>
       <div className='max-w-screen-xl mx-6 lg:mx-auto pt-12'>
@@ -132,6 +132,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className='flex flex-col items-center lg:items-end justify-end w-full lg:w-1/3'>
+            <a href={WEBSITE_LOGIN} target="_blank" rel='noopener noreferrer' className='flex mb-4 text-gray-600'>
+              <FontAwesomeIcon icon={faExternalLink} className="self-center mr-2" />
+              <span>Website Login</span>
+            </a>
             <div className='self-center lg:self-end mb-4'>
               <Button
                 label='Member Sign In'
